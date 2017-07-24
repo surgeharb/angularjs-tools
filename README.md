@@ -28,9 +28,10 @@ app.directive('starRating', [function () {
 ```
  4. IMPORTANT!! If you are not using MaterializeCss
  ```html
+ <!-- star-rating.html modification -->
  <ul class="rating">
   <li ng-repeat="star in stars" class="star" ng-class="{clickable: edit}" ng-style="{'color': color}" ng-click="toggle($index)">
-    <!-- replace all the <i> tags with an image of your own -->
+    <!-- replace all the <i> tags with images of your own while preserving the ng-if condition -->
     <i class="material-icons" ng-if="!star.filled">star_border</i>
     <i class="material-icons" ng-if="star.filled">star</i>
     <!-- -->
