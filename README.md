@@ -21,5 +21,7 @@ app.directive('starRating', [function () {
 
 3. Add the directive to the html page where you want to set stars
 ```html
+<!-- All the parameters are optional -->
+<!-- defaults value:0, max:5, edit:false, color:#f5a623 -->
 <star-rating value=3 max=5 edit=true color="#000000"></star-rating>
 ```
