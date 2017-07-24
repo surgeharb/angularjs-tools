@@ -21,6 +21,7 @@ app.directive('starRating', [function () {
 
 3. Add the directive to the html page where you want to set stars after importing Google Material Icons
 ```html
+<!-- If you are using MaterializeCss, add the link tag -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- All the parameters are optional -->
 <!-- defaults value:0, max:5, edit:false, color:#f5a623 -->
