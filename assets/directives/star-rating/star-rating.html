@@ -1,0 +1,6 @@
+<ul class="rating">
+  <li ng-repeat="star in stars" class="star" ng-class="{clickable: edit}" ng-style="{'color': color}" ng-click="toggle($index)">
+    <i class="material-icons" ng-if="!star.filled">star_border</i>
+    <i class="material-icons" ng-if="star.filled">star</i>
+  </li>
+</ul>

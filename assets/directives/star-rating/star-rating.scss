@@ -1,0 +1,14 @@
+star-rating {
+  display: block;
+  .rating {
+    margin: 0;
+    display: inline-block;
+    .star {
+      cursor: default;
+      display: inline-block;
+      &.clickable {
+        cursor: pointer;
+      }
+    }
+  }
+}
