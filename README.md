@@ -26,7 +26,7 @@ app.directive('starRating', [function () {
 <!-- defaults value:0, max:5, edit:false, color:#f5a623 -->
 <star-rating value=3 max=5 edit=true color="#000000"></star-rating>
 ```
- 4. IMPORTANT!! If you are not using [MaterializeCss] (http://materializecss.com)
+ 4. IMPORTANT!! If you are not using [MaterializeCss](http://materializecss.com)
  ```html
  <!-- star-rating.html modification -->
  <ul class="rating">
