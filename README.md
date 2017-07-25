@@ -3,6 +3,10 @@ AngularJS 1.x helper tools
 
 ## Star Rating Directive
 
+#### You have the ability to set static stars or user editable stars
+![alt text](http://files.sergeharb.com/angular-tools/stars2.PNG "Stars")
+![alt text](http://files.sergeharb.com/angular-tools/stars1.PNG "Stars")
+
 To get your directive working:
 
 1. Include the javascript code after your angular module initialization
@@ -21,21 +25,10 @@ app.directive('starRating', [function () {
 
 3. Add the directive to the html page where you want to set stars after importing Google Material Icons
 ```html
-<!-- If you are using MaterializeCss, add the link tag -->
+<!-- Add the link tag because we are using Google Material Icons for the stars display -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <!-- All the parameters are optional -->
 <!-- defaults value:0, max:5, edit:false, color:#f5a623 -->
 <star-rating value=3 max=5 edit=true color="#000000"></star-rating>
 ```
- 4. IMPORTANT!! If you are not using [MaterializeCss](http://materializecss.com)
- ```html
- <!-- star-rating.html modification -->
- <ul class="rating">
-  <li ng-repeat="star in stars" class="star" ng-class="{clickable: edit}" ng-style="{'color': color}" ng-click="toggle($index)">
-    <!-- replace all <i> tags with images of your own while preserving ng-if condition -->
-    <i class="material-icons" ng-if="!star.filled">star_border</i>
-    <i class="material-icons" ng-if="star.filled">star</i>
-    <!-- -->
-  </li>
-</ul>
- ```
