@@ -12,7 +12,8 @@ To get your directive working:
 1. Include the javascript code after your angular module initialization
 ```javascript
 var app = angular.module('myApp', []);
-//given code in star-rating.js
+
+/** given code in star-rating.js */
 app.directive('starRating', [function () {
   //code that you are not supposed to modify
 }]);
